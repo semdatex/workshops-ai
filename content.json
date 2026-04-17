@@ -1,0 +1,28 @@
+{
+  "epic": {
+    "id": "TEP-12",
+    "title": "AI Workshop Knowledge Sharing Hub",
+    "status": "Active",
+    "description": "A public landing page for SEMDATEX's AI Knowledge Sharing Workshop series. Content sourced from Notion, deployed via GitHub Pages."
+  },
+  "sessions": [
+    {
+      "id": "TES-62",
+      "name": "Scaffold the landing page",
+      "status": "Building",
+      "weight": 10
+    },
+    {
+      "id": "TES-63",
+      "name": "Populate with live Notion content",
+      "status": "Draft",
+      "weight": 20
+    },
+    {
+      "id": "TES-64",
+      "name": "Add hero image and polish",
+      "status": "Todo",
+      "weight": 30
+    }
+  ]
+}

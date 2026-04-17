@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SEMDATEX · AI Knowledge Sharing Workshops</title>
+    <meta
+      name="description"
+      content="SEMDATEX's AI Knowledge Sharing Workshop series — sessions, progress, and how to join."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root { color-scheme: dark; }
+      body { font-feature-settings: "cv11", "ss01"; }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased">
+    <main class="mx-auto max-w-5xl px-5 py-12 sm:px-8 sm:py-16">
+      <header class="mb-12">
+        <p class="text-sm font-medium uppercase tracking-[0.2em] text-sky-400">
+          SEMDATEX
+        </p>
+        <h1 class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
+          AI Knowledge Sharing Workshops
+        </h1>
+        <p class="mt-4 max-w-2xl text-base text-slate-400 sm:text-lg">
+          A living home for our internal workshop series — sessions,
+          progress, and how to get involved.
+        </p>
+      </header>
+
+      <section
+        id="epic"
+        class="mb-10 rounded-2xl border border-slate-800 bg-slate-900/50 p-6 sm:p-8"
+        aria-busy="true"
+      >
+        <p class="text-sm text-slate-500">Loading epic…</p>
+      </section>
+
+      <section id="progress" class="mb-10" aria-busy="true">
+        <div class="mb-3 flex items-baseline justify-between gap-4">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400">
+            Progress
+          </h2>
+          <span
+            id="progress-label"
+            class="text-sm tabular-nums text-slate-500"
+            >—</span
+          >
+        </div>
+        <div class="h-2 w-full overflow-hidden rounded-full bg-slate-800">
+          <div
+            id="progress-bar"
+            class="h-full w-0 rounded-full bg-sky-500 transition-[width] duration-700"
+          ></div>
+        </div>
+      </section>
+
+      <section id="sessions-section">
+        <h2 class="mb-5 text-sm font-semibold uppercase tracking-wider text-slate-400">
+          Sessions
+        </h2>
+        <div
+          id="sessions"
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2"
+          aria-busy="true"
+        >
+          <p class="text-sm text-slate-500 sm:col-span-2">
+            Loading sessions…
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
